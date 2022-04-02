@@ -1,0 +1,497 @@
+/*==========FONTS FAMILY==========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap');
+
+/*=====x=====FONTS FAMILY=====x=====*/
+
+
+/*======ROOT VARIABLES=============*/
+
+:root {
+    /*----color------------*/
+    --color-black: #151515;
+    --color-dark-grey: #444444;
+    --color-gold: #D5966C;
+    --color-white: #ffffff;
+    /*-----body-----------*/
+    --body-font-family-m: outfit;
+    --body-font-size-m: 2.2rem;
+    --body-font-weight-m: 300;
+    --body-line-height-m: 3.2rem;
+    --body-font-family-s: outfit;
+    --body-font-size-s: 1.8rem;
+    --body-font-weight-s: 30rem;
+    --body-line-height-s: 2.8rem;
+    /*-----heading-----------*/
+    --heading-font-family-xl-l-m-s: Big Shoulders Display;
+    --heading-font-weight-xl-l-m-s: 900;
+    --heading-font-size-xl: 9.6rem;
+    --heading-line-height-xl: 8.8rem;
+    --heading-font-size-l: 7.0rem;
+    --heading-line-height-l: 7.0rem;
+    --heading-font-size-m: 6.0rem;
+    --heading-line-height-m: 5.0rem;
+    --heading-font-size-s: 3.6rem;
+    --heading-line-height-s: 3.6rem;
+    --heading-font-size-eb: 2.0rem;
+    --heading-line-height-eb: 2.394rem;
+    --heading-font-weight-eb: 800;
+    --heading-text-transform: uppercase;
+    --heading-letter-spacing-eb: 0.2rem;
+}
+
+
+/*====x==ROOT VARIABLES=====x========*/
+
+
+/*======UNIVERSAL STYLES==========*/
+
+.head-xl {
+    font-family: var(--heading-font-family-xl-l-m-s);
+    font-size: var(--heading-font-size-xl);
+    font-weight: var(--heading-font-weight-xl-l-m-s);
+    line-height: var(--heading-line-height-xl);
+    color: var(--color-white);
+}
+
+.head-l {
+    font-family: var(--heading-font-family-xl-l-m-s);
+    font-size: var(--heading-font-size-l);
+    font-weight: var(--heading-font-weight-xl-l-m-s);
+    line-height: var(--heading-line-height-l);
+    color: var();
+}
+
+.head-m {
+    font-family: var(--heading-font-family);
+    font-size: var(--heading-font-size-m);
+    font-weight: var(--heading-font-weight-xl);
+    line-height: var(--heading-line-height-m);
+    text-transform: var(--heading-text-transform);
+    margin-bottom: 3.2rem;
+}
+
+.head-s {
+    font-family: var(--heading-font-family);
+    font-size: var(--heading-font-size-s);
+    font-weight: var(--heading-font-weight-eb);
+    line-height: var(--heading-line-height-s);
+    text-transform: var(--heading-text-transform);
+    color: var(--color-white);
+}
+
+.head-eb {
+    font-family: var(--heading-font-family);
+    font-size: var(--heading-font-size-eb);
+    font-weight: var(--heading-font-weight-eb);
+    line-height: var(--heading-font-line-height-eb);
+    color: var(--color-white);
+    letter-spacing: var(--heading-letter-spacing-eb);
+}
+
+.body-m {
+    font-family: var(--body-font-family-m);
+    font-size: var(--body-font-size-m);
+    font-weight: var(--body-font-weight-m);
+    line-height: var(--body-font-family-m);
+    color: var(--color-dark-grey);
+}
+
+.body-s {
+    font-family: var(--body-font-family-s);
+    font-size: var(--body-font-size-s);
+    font-weight: var(--body-font-weight-s);
+    line-height: var(--body-line-height-s);
+    color: var(--color-white);
+}
+
+
+/*===x===UNIVERSAL STYLES====x======*/
+
+
+/*=========MY DEFAULTS===============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 143.9rem;
+    height: 255.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map {
+    width: 144rem;
+    height: 139.2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*=========#GRID-1==================*/
+
+#grid-1,
+.square {
+    width: 127.5rem;
+    height: 80rem;
+}
+
+#grid-1 .square {
+    display: flex;
+}
+
+#grid-1 .left-rectangle {
+    width: 45rem;
+    height: 79.9rem;
+    background-color: var(--color-black);
+    margin-top: 0.1rem;
+}
+
+#grid-1 .hero {
+    width: 54rem;
+    height: 80rem;
+    position: absolute;
+}
+
+#grid-1 .head-xl {
+    width: 51.4rem;
+    height: 17.6rem;
+    position: absolute;
+    top: 19rem;
+    left: 16.5rem;
+    top: calc(50% - 17.6rem/2 - 12.25rem);
+}
+
+#grid-1 .body-m {
+    width: 35rem;
+    height: 16rem;
+    position: absolute;
+    top: 19rem;
+    left: 92.5rem;
+    top: calc(50% - 16rem/2 - 13rem);
+}
+
+#grid-1 a .link {
+    width: 26rem;
+    height: 7.2rem;
+    background-image: linear-gradient(to right, #151515 20.4rem, #D5966C 5.6rem);
+    position: absolute;
+    top: 41.4rem;
+    left: 92.5rem;
+}
+
+#grid-1 a .link:hover {
+    background-image: linear-gradient(to right, #D5966C 20.4rem, #151515 5.6rem);
+}
+
+#grid-1 a .link #location {
+    width: 20.4rem;
+    height: 7.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-1 a .link #location .head-eb {
+    width: 19rem;
+    height: 2.4rem;
+}
+
+.arrow {
+    position: absolute;
+    width: 5.6rem;
+    height: 7.2rem;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-arrow {
+    width: 8px;
+    height: 24px;
+}
+
+
+/*=====X====#GRID-1=========X=========*/
+
+
+/*==========#GRID-2===================*/
+
+#grid-2 {
+    width: 111rem;
+    height: 115rem;
+    display: grid;
+    align-items: center;
+    column-gap: 3.0rem;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2.7rem;
+    margin-left: 16.5rem;
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+}
+
+#grid-2 .first-sq {
+    width: 35rem;
+    height: 28rem;
+}
+
+#grid-2 .first-sq .head-m {
+    width: 35rem;
+    height: 12rem;
+}
+
+#grid-2 .first-sq .body-m {
+    height: 12.8rem;
+}
+
+#grid-2 .img-1 {
+    width: 63.5rem;
+    height: 40rem;
+    margin-left: -18.999rem;
+}
+
+#grid-2 .img-2 {
+    width: 63.5rem;
+    height: 72rem;
+    grid-row: 2/4;
+}
+
+#grid-2 .img-3 {
+    width: 44.5rem;
+    height: 31.3rem;
+}
+
+#grid-2 .second-sq {
+    width: 44.5rem;
+    height: 37.7rem;
+    background-color: var(--color-black);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid-2 .second-sq .sq-wrap {
+    width: 35rem;
+    height: 24.8;
+}
+
+#grid-2 .second-sq .sq-wrap .head-m {
+    height: 12rem;
+    color: var(--color-white);
+}
+
+#grid-2 .second-sq .sq-wrap .body-m {
+    height: 9.6rem;
+    color: var(--color-white);
+}
+
+
+/*====X======#GRID-2==========X=========*/
+
+
+/*==============FOOTER==================*/
+
+footer {
+    width: 144rem;
+    height: 24.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black);
+}
+
+footer .footer {
+    width: 111rem;
+    height: 8.4rem;
+    margin-left: 16.5rem;
+    margin-right: 16.5rem;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer .footer-1 {
+    width: 73rem;
+    height: 8.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer .footer-1 .footer-a {
+    width: 26.957rem;
+    height: 5.8rem;
+}
+
+footer .footer .footer-1 .footer-b {
+    width: 44.rem;
+    height: 8.4rem;
+}
+
+footer .footer .footer-1 .footer-b .body-s {
+    width: 37rem;
+    height: 8.4rem;
+}
+
+footer .footer #icons {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    margin-top: -56px;
+    margin-left: 280px;
+}
+
+footer .footer #icons a .icons {
+    width: 13px;
+    height: 14px;
+    border: 1px solid #000000;
+    box-shadow: 0px 1px 2px #000000;
+    background-color: rgb(158, 168, 18);
+}
+
+
+/*========M.HTML=========================*/
+
+
+/*=========GRID-1-MAP====================*/
+
+.grid-1-map a .link1 {
+    width: 26.4rem;
+    height: 7.2rem;
+    background-image: linear-gradient(to right, #D5966C 5.6rem, #151515 -20.5rem);
+    position: absolute;
+    top: 1rem;
+    left: 38.6rem;
+    z-index: 99;
+}
+
+.grid-1-map a .link1:hover {
+    background-image: linear-gradient(to right, #151515 5.6rem, #d5966c -20.4rem);
+}
+
+.grid-1-map a .link1 #location {
+    width: 20.4rem;
+    height: 7.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+
+.grid-1-map a .link1 #location .head-eb {
+    width: 19rem;
+    height: 2.4rem;
+}
+
+.arrow1 {
+    position: absolute;
+    width: 5.6rem;
+    height: 7.2rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-arrow {
+    width: 8px;
+    height: 24px;
+}
+
+
+/*=====x====GRID-1-MAP========x============*/
+
+
+/*===========GRID-2-LOCATION================*/
+
+#grid-2-location {
+    width: 144rem;
+    height: 54.8rem;
+    display: flex;
+    background-color: var(--color-black);
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-2-location .flex {
+    width: 111rem;
+    height: 31.6rem;
+    display: flex;
+}
+
+#grid-2-location .flex #left-side .head-l {
+    width: 35rem;
+    height: 14rem;
+    color: var(--color-white);
+}
+
+#grid-2-location .flex #right-side {
+    margin-left: 22rem;
+}
+
+#grid-2-location .flex #right-side #king-street {
+    margin-bottom: 3.2rem;
+}
+
+#grid-2-location .flex #right-side #king-street .head-s {
+    color: var(--color-gold)
+}
+
+#grid-2-location .flex #right-side #king-street .body-m {
+    color: var(--color-white);
+}
+
+#grid-2-location .flex #right-side .open-hours {
+    width: 51rem;
+    height: 12.8rem;
+    color: var(--color-white);
+}
+
+
+/*===========GRID-2-LOCATION==============*/
+
+
+/*=============FOOTER=====================*/
+
+footer {
+    background-color: var(--color-gold);
+}
+
+
+/*========x=====FOOTER========x=========*/
+
+
+/*============MEDIA QUERRY=================*/
+
+
+/*=================TABLET==================*/
+
+@media (max-width:768px) {
+    #grid-1 {
+        width: 76.8rem;
+        height: 228.7rem;
+        border: 1px solid red;
+    }
+    #grid-1 .left-rectangle {
+        display: none;
+    }
+}
